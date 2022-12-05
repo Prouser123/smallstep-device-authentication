@@ -1,0 +1,6 @@
+{
+        "ca-url": "https://$CA_URL",
+        "ca-config": "/home/step/config/ca.json",
+        "fingerprint": "TBC",
+        "root": "/home/step/certs/root_ca.crt"
+}
