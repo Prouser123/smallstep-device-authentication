@@ -49,12 +49,13 @@ mkdir -p certs secrets
 
 # 1. Create root certificate
 
+createPasswordFile secrets/root_password
 createPasswordFile secrets/password
 
 step certificate create \
     --template templates/certs/x509/root.tpl \
     --not-after 87600h \
-    --password-file secrets/password \
+    --password-file secrets/root_password \
     "$NAME Root CA" \
     certs/root_ca.crt secrets/root_ca_key
 
@@ -63,5 +64,8 @@ step certificate create \
     --template templates/certs/x509/intermediate.tpl \
     --not-after 43800h \
     --password-file secrets/password \
+    --ca certs/root_ca.crt \
+    --ca-key secrets/root_ca_key \
+    --ca-password-file secrets/root_password \
     "$NAME Intermediate CA" \
     certs/intermediate_ca.crt secrets/intermediate_ca_key
