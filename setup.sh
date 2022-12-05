@@ -33,6 +33,7 @@ sed -i 's/$CA_URL/'"$CA_URL"'/g' config/ca.json
 sed -i 's/$CA_URL/'"$CA_URL"'/g' config/defaults.json
 
 sed -i 's/$CA_URL/'"$CA_URL"'/g' templates/certs/x509/root.tpl
+sed -i 's/$CA_URL/'"$CA_URL"'/g' templates/certs/x509/intermediate.tpl
 sed -i 's/$SUFFIX/'"$ACME_DEVICE_ATTEST_CN_SUFFIX"'/g' templates/certs/x509/intermediate.tpl
 sed -i 's/$SUFFIX/'"$ACME_DEVICE_ATTEST_CN_SUFFIX"'/g' templates/certs/x509/acme-client.tpl
 
