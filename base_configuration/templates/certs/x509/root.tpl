@@ -11,7 +11,6 @@
         "critical": true,
         "permittedDNSDomains": ["$CA_URL"],
         "_2": "Block all other dns names, emails, etc.",
-        "excludedDNSDomains": [""],
         "excludedIPRanges": ["0.0.0.0/0", "0:0:0:0:0:0:0:0/0"],
         "excludedEmailAddresses": [""],
         "excludedURIDomains": [""]
