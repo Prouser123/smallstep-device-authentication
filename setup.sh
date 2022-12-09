@@ -2,7 +2,7 @@
 
 CA_URL="$1"
 CA_WEBUI_CN="$2"
-ACME_DEVICE_ATTEST_CN_SUFFIX=".$3.$1"
+ACME_DEVICE_ATTEST_CN_SUFFIX="$3.$1"
 NAME="$4"
 
 createPasswordFile () {
