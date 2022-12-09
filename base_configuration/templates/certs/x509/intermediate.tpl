@@ -7,6 +7,6 @@
     },
     "nameConstraints": {
         "critical": true,
-        "permittedDNSDomains": ["$CA_URL", ".uids.acme.certs.step-eaptls.delta.cloud.jcx.ovh"]
+        "permittedDNSDomains": ["$CA_URL", "$SUFFIX"]
     } 
 }
