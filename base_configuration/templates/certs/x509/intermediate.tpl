@@ -7,6 +7,6 @@
     },
     "nameConstraints": {
         "critical": true,
-        "permittedDNSDomains": ["$CA_URL", "$SUFFIX"]
+        "permittedDNSDomains": ["$CA_URL"]
     } 
 }
